@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+    
+    <div class="show">
+        <button class = "btn">show</button>
+    </div>
+</body>
+    <script>
+        let btn = document.querySelector(".btn")
+        btn.onclick = function displayData()
+        {
+            let div = document.createElement("div");
+            div.innerHTML = "India is often referred to as a subcontinent of Southern Asia owing to its distinct and vast landmass. Surrounded by sea on three sides, the majestic Himalayas separates it from the rest of mainland Asia. India is famous for its ancient history, varied landscapes and diverse culture"
+            div.style = "textAline : center"
+            let button = document.createElement("button")
+            button.innerHTML = "hide";
+            btn.innerHTML = "";
+            btn.style = "border : none"
+            
+            button.onclick=function hide(){
+                div.innerHTML = ""
+                button.innerHTML = "";
+                button.style = "border : none"
+                btn.innerHTML = "show";
+                btn.style = "border : 1px solid black"
+    
+            }
+
+            let show = document.querySelector(".show")
+            show.append(div,button)
+        }
+    </script>
+</html>
