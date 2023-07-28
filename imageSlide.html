@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "image.css"/>
+</head>
+<body>
+    <div class="main">
+        <div class="imagediv">
+            <div class="img"></div>
+        </div>
+        <div class="disply">
+            <button class="btn">click</button>
+            <button class="btn2">click</button>
+            <button class="btn3">click</button>
+        </div>
+    </div>
+    
+</body>
+<script>
+    let btn1= document.querySelector(".btn")
+    let btn2= document.querySelector(".btn2")
+    let btn3= document.querySelector(".btn3")
+
+    btn1.onclick =function display (){
+        let img1 = document.createElement("img");
+		let image = img1.setAttribute("src","https://upload.wikimedia.org/wikipedia/en/e/ee/Major_The_Film.jpg");
+    }
+
+    btn2.onclick =function display (){
+        let img2 = document.createElement("img");
+		let image = img2.setAttribute("src","https://upload.wikimedia.org/wikipedia/en/e/ee/Major_The_Film.jpg");
+    }
+
+    btn3.onclick =function display (){
+        let img3 = document.createElement("img");
+		let image = img3.setAttribute("src","https://upload.wikimedia.org/wikipedia/en/e/ee/Major_The_Film.jpg");
+    }
+</script>
+</html>
